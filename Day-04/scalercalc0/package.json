@@ -1,0 +1,11 @@
+{
+  "name": "scalercalc0",
+  "version": "1.0.0",
+  "description": "this is a calculator module developed by aakash during node course ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aakash",
+  "license": "ISC"
+}
