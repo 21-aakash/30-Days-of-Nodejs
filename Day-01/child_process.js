@@ -9,3 +9,5 @@ const cp = require('child_process')
 // cp.execSync('calc')
 
 console.log('output'+cp.execSync('node demo.js'));
+cp.execSync('start chrome https://www.freejobalert.com/new-updates/');
+
