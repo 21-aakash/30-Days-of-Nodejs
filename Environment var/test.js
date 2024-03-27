@@ -1,11 +1,12 @@
 
-
-
-
+const middleone = require('./middlewares/middle1')
+const middletwo = require('./middlewares/middle2')
 
 const express= require('express');
+const morgan = require('morgan');
 
 const app= express();
+
 
 app.use(express.json())
 let courses= [
@@ -16,6 +17,13 @@ let courses= [
 ]
 
 //read the data-----------------------------------------------------------------------------------------------------------
+
+app.use(morgan);
+
+
+app.use(middleone);
+app.use(middletwo);
+app.use(morgan);
 
 app.get('/', (req, res)=>{
 
